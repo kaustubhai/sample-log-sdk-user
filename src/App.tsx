@@ -28,10 +28,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <button onClick={() => chronolog.log('From react')}>Normal Log</button>
-        <button onClick={() => chronolog.error(new Error('From react'))}>Error Log</button>
+        <button onClick={() => chronolog.error(new Error('Error from react'))}>Error Log</button>
         <button onClick={() => chronolog.event_track({
-          message: "This-is-an-event-message",
-          severityLevel: "EVE",
+          message: "This-is-an-event-message"
         })}>Event log</button>
         <button onClick={() => 
           chronolog.log("API called successfully", apiObj)
