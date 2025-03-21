@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import chronolog from '@farmart-engineering/chronolog';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+console.log({chronolog: chronolog.ErrorBoundary})
 root.render(
   <React.StrictMode>
+    <chronolog.ErrorBoundary>
     <App />
+    </chronolog.ErrorBoundary>
   </React.StrictMode>
 );
 
