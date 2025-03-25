@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@farmart-engineering/chronolog": "github:FarMart-Engineering/chronolog",
+    "@farmart-engineering/chronolog": "1.12.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
